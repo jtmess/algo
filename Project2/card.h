@@ -18,14 +18,14 @@ class card
     private:
         int value;
         string suit;
-        void setValue(int v);
-        void setSuit(string s);
+        void setValue(int v); //sets card value
+        void setSuit(string s); //sets suit value
 
     public:
-        card(int value, string suit);
-        int getValue();
-        string getSuit();
-        friend ostream& operator<< (ostream& ostr, const card& c);
+        card(int value, string suit); //constructor
+        int getValue(); //gets card value
+        string getSuit(); //get suit value
+        friend ostream& operator<< (ostream& ostr, const card& c); // << override
     
 };
 

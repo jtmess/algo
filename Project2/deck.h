@@ -23,8 +23,8 @@ class deck
         deck();
         node<card> *front = NULL;
         node<card> *d;
-        void shuffle();
-        friend ostream& operator<< (ostream& ostr, const deck& deck);
+        void shuffle(); // shuffles deck
+        friend ostream& operator<< (ostream& ostr, const deck& deck); // << override
     
 };
 

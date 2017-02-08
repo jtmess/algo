@@ -16,7 +16,9 @@ deck::deck() {
     //initialize deck
     string s;
     
+    
     for (int i = 0; i < 4; i++) {
+        //chooses suit
         switch (i) {
             case 0:
                 s = "Clubs";
@@ -33,6 +35,7 @@ deck::deck() {
             default:
                 break;
         }
+        //face value
         for (int j = 13; j > 0; j--) {
             d = new node<card>(card(j,s), front);
             front = d;
