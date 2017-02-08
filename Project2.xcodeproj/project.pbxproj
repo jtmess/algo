@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B3A97EDA1E4ACC1500E69D46 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A97ED91E4ACC1500E69D46 /* main.cpp */; };
+		B3A97EE81E4AD1A000E69D46 /* card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A97EE71E4AD1A000E69D46 /* card.cpp */; };
+		B3A97EEC1E4ADC7B00E69D46 /* deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A97EEB1E4ADC7B00E69D46 /* deck.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		B3A97ED61E4ACC1500E69D46 /* Project2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Project2; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A97ED91E4ACC1500E69D46 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B3A97EE61E4AD15800E69D46 /* card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = card.h; sourceTree = "<group>"; };
+		B3A97EE71E4AD1A000E69D46 /* card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = card.cpp; sourceTree = "<group>"; };
+		B3A97EE91E4AD51E00E69D46 /* deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deck.h; sourceTree = "<group>"; };
+		B3A97EEA1E4ADAEA00E69D46 /* node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		B3A97EEB1E4ADC7B00E69D46 /* deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = deck.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +64,12 @@
 		B3A97ED81E4ACC1500E69D46 /* Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				B3A97EEA1E4ADAEA00E69D46 /* node.h */,
 				B3A97ED91E4ACC1500E69D46 /* main.cpp */,
+				B3A97EE61E4AD15800E69D46 /* card.h */,
+				B3A97EE71E4AD1A000E69D46 /* card.cpp */,
+				B3A97EE91E4AD51E00E69D46 /* deck.h */,
+				B3A97EEB1E4ADC7B00E69D46 /* deck.cpp */,
 			);
 			path = Project2;
 			sourceTree = "<group>";
@@ -120,6 +132,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3A97EDA1E4ACC1500E69D46 /* main.cpp in Sources */,
+				B3A97EE81E4AD1A000E69D46 /* card.cpp in Sources */,
+				B3A97EEC1E4ADC7B00E69D46 /* deck.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
