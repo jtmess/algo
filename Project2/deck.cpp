@@ -9,6 +9,7 @@
 #include "deck.h"
 #include <iostream>
 #include "string.h"
+#include <vector>
 
 using namespace std;
 
@@ -54,5 +55,27 @@ ostream& operator<< (ostream& ostr, const deck& deck) {
     
     return ostr;
         
+}
+
+void deck::shuffle() {
+    //puts deck into vector form
+    vector<card> vDeck;
+    node<card> curr = *front;
+    vDeck.push_back(curr.nodeValue);
+    while (curr.next != NULL) {
+        curr = *curr.next;
+        vDeck.push_back(curr.nodeValue);
+    }
+    
+    //shuffles
+    random_shuffle(vDeck.begin(), vDeck.end());
+    
+    
+    //puts deck back into linked list form
+    front = NULL;
+    for (int i = 0; i < vDeck.size(); i++) {
+        d = new node<card>(vDeck.at(i), front);
+        front = d;
+    }
 }
 

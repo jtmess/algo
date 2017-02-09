@@ -12,8 +12,11 @@
 #include "node.h"
 
 int main(int argc, const char * argv[]) {
-    deck d;
-    cout << d << endl;
+    
+    //creates, shuffles, and prints the deck
+    deck deck;
+    deck.shuffle();
+    cout << deck << endl;
     
     
 }
